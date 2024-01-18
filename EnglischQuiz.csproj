@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Bilder\EnglischBildEnde.PNG" />
+    <None Remove="Bilder\EnglischBildStart.PNG" />
+    <None Remove="Bilder\EnglischBilQuiz.PNG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Bilder\EnglischBildEnde.PNG" />
+    <Resource Include="Bilder\EnglischBildStart.PNG" />
+    <Resource Include="Bilder\EnglischBilQuiz.PNG" />
+  </ItemGroup>
+
+</Project>

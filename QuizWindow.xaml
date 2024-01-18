@@ -1,0 +1,47 @@
+﻿<Window x:Class="EnglischQuiz.QuizWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EnglischQuiz"
+        mc:Ignorable="d"
+        Title="QuizWindow" Height="800" Width="1000" ResizeMode="NoResize">
+    <Grid>
+        <Image Source="/Bilder/EnglischBilQuiz.PNG" Stretch="Fill"/>
+
+        <StackPanel>
+            <TextBlock Margin="20,10,20,0" FontStyle="Italic" FontSize="25">Highscore: <TextBlock x:Name="highscore" FontSize="25">0</TextBlock></TextBlock>
+            <TextBlock x:Name="Sprechblase" Margin="295,0,0,0" Width="334" Height="181" FontStyle="Italic" FontSize="30" TextWrapping="Wrap" >Hier kommt die Frage hin</TextBlock>
+            <Button Click="antw1_Click" x:Name="button1" Margin="50,270,520,0" FontSize="24" FontStyle="Italic" >antwort1
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="Foreground" Value="Black"/>
+                        <Setter Property="BorderBrush" Value="Black"/>
+                        <Setter Property="BorderThickness" Value="1"/>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button Click="antw2_Click" x:Name="button2" Margin="50,10,520,0" FontSize="24" FontStyle="Italic" >antwort2
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="Foreground" Value="Black"/>
+                        <Setter Property="BorderBrush" Value="Black"/>
+                        <Setter Property="BorderThickness" Value="1"/>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button Click="antw3_Click" x:Name="button3"  Margin="50,10,520,0" FontSize="24" FontStyle="Italic">antwort3
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="Foreground" Value="Black"/>
+                        <Setter Property="BorderBrush" Value="Black"/>
+                        <Setter Property="BorderThickness" Value="1"/>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
